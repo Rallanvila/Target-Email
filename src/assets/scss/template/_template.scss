@@ -1,59 +1,67 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+	background: #f3f3f3 !important;
 }
-
-.container.header {
-  background: #f3f3f3;
-}
-
-.body-drip {
-  border-top: 8px solid #663399;
-}
-
-// Full Width Headers
 .header {
-  background: #8a8a8a;
+	border-bottom: 1px solid #c5c5c5;
+	.header__target-logo {
+		img {
+			height: 45px;
+			padding: 15px;
+		}
+		.header__order-number {
+			p {
+				padding-top: 32px;
+				padding-right: 20px;
+				color: $p-color;
+			}
+		}
+	}
 }
-
-.header .columns {
-  padding-bottom: 0;
+.order-confirmation {
+	h1 {
+		color: $t-red;
+		font-weight: 600;
+		text-align: center;
+		font-size: 38px;
+		padding: 20px 0;
+	}
+	h2 {
+		font-weight: 600;
+		color: $h2-color;
+		text-align: center;
+	}
+	img {
+		height: 160px;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		padding-top: 20px;
+	}
 }
+.total {
+	border-bottom: 1px solid #c5c5c5;
+	border-top: 1px solid #c5c5c5;
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
-
-.header .wrapper-inner {
-  padding: 20px;
-}
-
-.header .container {
-  background: transparent;
-}
-
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
-
-.wrapper.secondary {
-  background: #f3f3f3;
+	.total-paid {
+		h3 {
+			font-weight: 600;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			padding-left: 10px;
+			color: $h2-color;
+		}
+	}
+	.total-amount {
+		font-weight: 600;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		padding-right: 10px;
+		color: $h2-color;
+	}
 }
