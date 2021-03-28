@@ -65,3 +65,72 @@ html,
 		color: $h2-color;
 	}
 }
+.barcode {
+	& > tbody > tr > th > table > tbody > tr > th {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	h5 {
+		font-size: 13px;
+		font-weight: 600;
+		text-align: center;
+		margin: 0 auto;
+	}
+	img {
+		margin: 0 auto;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	p {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+}
+.any-issues {
+	background: #edeeef;
+	background-color: #edeeef;
+	& > tbody > tr > td > table > tbody > tr > th {
+		background: #edeeef;
+		background-color: #edeeef;
+	}
+	h2 {
+		font-weight: 600;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+.fix-issues {
+	& > tbody > tr > td > table > tbody > tr > th {
+		padding-bottom: 20px;
+	}
+	p {
+		color: $p-color;
+		line-height: 24px;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	.button {
+		color: $p-color;
+		border: 1px solid $p-color;
+		border-radius: 5px;
+		padding: 15px 20px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+.items-picked-up {
+	background: #edeeef;
+	background-color: #edeeef;
+	& > tbody > tr > td > table > tbody > tr > th {
+		background: #edeeef;
+		background-color: #edeeef;
+	}
+	h2 {
+		font-weight: 600;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
