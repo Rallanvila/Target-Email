@@ -9,11 +9,18 @@ html,
 	padding-bottom: 300px;
 }
 .header {
+	& > tbody > tr > td > table > tbody > tr > th {
+		padding-bottom: 0px !important;
+	}
 	border-bottom: 1px solid #c5c5c5;
 	.header__target-logo {
+		& > tbody > tr > th {
+			padding-bottom: 0px !important;
+		}
 		img {
 			height: 45px;
-			padding: 15px;
+			padding-top: 15px;
+			padding-bottom: 0px !important;
 		}
 		.header__order-number {
 			p {
@@ -25,12 +32,16 @@ html,
 	}
 }
 .order-confirmation {
+	& > tbody > tr > th {
+		padding-bottom: 0px !important;
+	}
 	h1 {
 		color: $t-red;
 		font-weight: 600;
 		text-align: center;
 		font-size: 38px;
-		padding: 20px 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	h2 {
 		font-weight: 600;
@@ -50,6 +61,9 @@ html,
 	border-top: 1px solid #c5c5c5;
 
 	.total-paid {
+		& > tbody > tr > th {
+			padding-bottom: 0px !important;
+		}
 		h3 {
 			font-weight: 600;
 			padding-top: 25px;
@@ -67,6 +81,9 @@ html,
 	}
 }
 .barcode {
+	& > tbody > tr > th {
+		padding-bottom: 0px !important;
+	}
 	& > tbody > tr > th > table > tbody > tr > th {
 		padding-bottom: 50px;
 		padding-top: 50px;
@@ -93,12 +110,14 @@ html,
 	& > tbody > tr > td > table > tbody > tr > th {
 		background: #edeeef;
 		background-color: #edeeef;
+		padding-bottom: 0 !important;
 	}
 	h2 {
 		font-weight: 600;
 		text-align: center;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		font-size: 19px;
 	}
 }
 .fix-issues {
@@ -132,18 +151,19 @@ html,
 	& > tbody > tr > td > table > tbody > tr > th {
 		background: #edeeef;
 		background-color: #edeeef;
+		padding-bottom: 0 !important;
 	}
 	h2 {
 		font-weight: 600;
 		text-align: center;
 		padding-top: 10px;
-		padding-bottom: 10px;
+		font-size: 19px;
+		padding-bottom: 10px !important;
 	}
 }
 .item {
-	& > tbody > tr > td > table > tbody > tr > th {
-		// padding-top: 30px;
-		// padding-bottom: 0;
+	& > tbody > tr > th {
+		padding-bottom: 0px !important;
 	}
 	img {
 		width: 175px;
@@ -163,6 +183,9 @@ html,
 	}
 }
 .order-details {
+	& > tbody > tr > th {
+		// padding-bottom: 0 !important;
+	}
 	a {
 		color: $p-color;
 		border: 1px solid $p-color;
@@ -177,19 +200,32 @@ html,
 	}
 }
 .footer-links {
+	text-align: center !important;
+	padding-top: 30px !important;
 	& > tbody > tr > th > table > tbody > tr > th {
-		padding-top: 30px;
-		padding-bottom: 30px;
-		text-align: center;
+		padding-top: 30px !important;
+		padding-bottom: 30px !important;
+		text-align: center !important;
+		a {
+			padding-top: 30px !important;
+			padding-bottom: 30px !important;
+			text-align: center !important;
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+		}
 	}
+
 	a {
-		// padding: 0 10px;
 		color: $p-color;
 		font-size: 13px;
+		text-align: center !important;
+		// 	padding: 0 10px;
+		// 	padding-top: 30px !important;
 		text-align: center !important;
 	}
 }
 .target-copyright {
+	text-align: center;
 	a {
 		color: $p-color;
 		padding-bottom: 10px;
@@ -204,6 +240,13 @@ html,
 		text-align: center;
 		padding-top: 5px;
 		font-size: 13px;
-		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.item {
+		img {
+			width: 460px;
+		}
 	}
 }
