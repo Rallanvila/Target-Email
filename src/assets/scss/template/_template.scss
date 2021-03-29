@@ -6,6 +6,7 @@ body,
 html,
 .body {
 	background: #f3f3f3 !important;
+	padding-bottom: 300px;
 }
 .header {
 	border-bottom: 1px solid #c5c5c5;
@@ -104,6 +105,12 @@ html,
 	& > tbody > tr > td > table > tbody > tr > th {
 		padding-bottom: 20px;
 	}
+	& > tbody > tr > td > table > table > tbody > tr > th {
+		padding-bottom: 50px !important;
+	}
+	.button-section {
+		padding-bottom: 30px;
+	}
 	p {
 		color: $p-color;
 		line-height: 24px;
@@ -117,7 +124,6 @@ html,
 		border-radius: 5px;
 		padding: 15px 20px;
 		text-align: center;
-		margin: 0 auto;
 	}
 }
 .items-picked-up {
@@ -132,5 +138,27 @@ html,
 		text-align: center;
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+}
+.item {
+	& > tbody > tr > td > table > tbody > tr > th {
+		// padding-top: 30px;
+		// padding-bottom: 0;
+	}
+	img {
+		width: 175px;
+		padding: 30px;
+	}
+	.item-description {
+		padding-top: 60px !important;
+	}
+	a {
+		font-size: 19px;
+		font-weight: bold;
+		color: #2d2d2d;
+		padding-top: 40px !important;
+	}
+	p {
+		padding-top: 20px;
 	}
 }
